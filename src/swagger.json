@@ -2,7 +2,7 @@
   "openapi": "3.0.3",
   "info": {
     "title": "Swagger RentalX - OpenAPI 3.0",
-    "description": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about\nSome useful links:\n- [The RentalX repository](https://github.com/swagger-api/swagger-petstore)",
+    "description": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about\nSome useful links:\n- [The RentalX repository](https://github.com/diasjoaovictor/rentx)",
     "contact": {
       "email": "jdias.victor@outlook.com"
     },
