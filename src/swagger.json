@@ -1,0 +1,129 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Swagger RentalX - OpenAPI 3.0",
+    "description": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about\nSome useful links:\n- [The RentalX repository](https://github.com/swagger-api/swagger-petstore)",
+    "contact": {
+      "email": "jdias.victor@outlook.com"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3333/"
+    }
+  ],
+  "tags": [
+    {
+      "name": "category",
+      "description": "categories of cars"
+    },
+    {
+      "name": "specification",
+      "description": "specifications of cars"
+    }
+  ],
+  "paths": {
+    "/categories": {
+      "post": {
+        "tags": [
+          "category"
+        ],
+        "summary": "Create a new category",
+        "description": "Create a new category",
+        "requestBody": {
+          "description": "Create a new category",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Category"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "category"
+        ],
+        "summary": "Create a new category",
+        "description": "Create a new category",
+        "responses": {
+          "200": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Category List": {
+                    "value": "[\n\t{\n\t\t\"id\": \"5c350ba4-2227-48d5-8fb1-389cd3ebc3de\",\n\t\t\"name\": \"SUV\",\n\t\t\"description\": \"SUV Car\",\n\t\t\"created_at\": \"2022-08-02T20:16:39.680Z\"\n\t}]"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/specifications": {
+      "post": {
+        "tags": [
+          "specification"
+        ],
+        "summary": "Create a new category",
+        "description": "Create a new category",
+        "requestBody": {
+          "description": "Create a new category",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Specification"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Category": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "SUV"
+          },
+          "description": {
+            "type": "string",
+            "example": "SUV Car sample"
+          }
+        }
+      },
+      "Specification": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Specification car sample"
+          },
+          "description": {
+            "type": "string",
+            "example": "Specification car sample"
+          }
+        }
+      }
+    }
+  }
+}
