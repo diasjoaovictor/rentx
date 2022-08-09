@@ -52,11 +52,11 @@
         "tags": [
           "category"
         ],
-        "summary": "Create a new category",
-        "description": "Create a new category",
+        "summary": "Consult List category",
+        "description": "Consult List category",
         "responses": {
           "200": {
-            "description": "Created",
+            "description": "Sucesso",
             "content": {
               "application/json": {
                 "examples": {
